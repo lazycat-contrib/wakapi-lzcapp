@@ -1,0 +1,19 @@
+package: community.lazycat.app.wakapi
+version: 2.17.6
+name: Wakapi
+description: A minimalist, self-hosted WakaTime-compatible backend for coding statistics.
+min_os_version: 1.5.0
+author: muety
+license: MIT
+homepage: https://github.com/muety/wakapi
+locales:
+  zh:
+    name: Wakapi
+    description: 一个极简、自托管且兼容 WakaTime 的编程统计后端。
+  en:
+    name: Wakapi
+    description: A minimalist, self-hosted WakaTime-compatible backend for coding statistics.
+permissions:
+  required:
+    - net.internet
+    - compose.override

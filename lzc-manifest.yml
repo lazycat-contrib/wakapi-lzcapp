@@ -10,6 +10,7 @@ services:
   wakapi:
     # upstream: ghcr.io/muety/wakapi:2.17.6
     image: ghcr.1ms.run/muety/wakapi:2.17.6
+    user: "0:0"
     environment:
       - WAKAPI_PASSWORD_SALT={{ stable_secret "wakapi_password_salt" }}
       - WAKAPI_LISTEN_IPV4=0.0.0.0

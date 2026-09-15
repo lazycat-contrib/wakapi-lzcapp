@@ -5,11 +5,10 @@ application:
       backend: http://wakapi:3000/
   public_path:
     - /
-
 services:
   wakapi:
-    # upstream: ghcr.io/muety/wakapi:2.17.6
-    image: ghcr.1ms.run/muety/wakapi:2.17.6
+    # upstream: ghcr.io/muety/wakapi:2.18.0
+    image: ghcr.1ms.run/muety/wakapi:2.18.0
     user: "0:0"
     environment:
       - WAKAPI_PASSWORD_SALT={{ stable_secret "wakapi_password_salt" }}
